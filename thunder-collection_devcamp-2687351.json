@@ -1,0 +1,140 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "devcamp-2687351",
+    "dateExported": "2023-11-02T23:43:50.941Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "a582dd5d-3a2e-48e7-ade2-cfc5ce3d9851",
+            "name": "bootcamps",
+            "containerId": "",
+            "created": "2023-11-02T20:05:48.742Z",
+            "sortNum": 10000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "3616ca95-50fe-4aeb-8aa0-523da274efed",
+            "colId": "f9dbbf2c-c431-40ff-acc7-33164309845d",
+            "containerId": "a582dd5d-3a2e-48e7-ade2-cfc5ce3d9851",
+            "name": "listar bootcamps",
+            "url": "http://127.0.0.1:4500/api/v1/devcamp/bootcamps/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-11-02T20:05:48.742Z",
+            "modified": "2023-11-02T22:07:47.402Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4af42b2f-ef06-4505-af99-4df107a29f0c",
+            "colId": "f9dbbf2c-c431-40ff-acc7-33164309845d",
+            "containerId": "a582dd5d-3a2e-48e7-ade2-cfc5ce3d9851",
+            "name": "listar bootcamps por id",
+            "url": "http://127.0.0.1:4500/api/v1/devcamp/bootcamps/6543f922c193c79c717a65cc",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2023-11-02T20:26:04.602Z",
+            "modified": "2023-11-02T22:47:10.269Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a945357e-541d-4f33-8f01-fdbfd62527da",
+            "colId": "f9dbbf2c-c431-40ff-acc7-33164309845d",
+            "containerId": "a582dd5d-3a2e-48e7-ade2-cfc5ce3d9851",
+            "name": "listar bootcamps por id con error",
+            "url": "http://127.0.0.1:4500/api/v1/devcamp/bootcamps/1",
+            "method": "GET",
+            "sortNum": 16250,
+            "created": "2023-11-02T22:49:54.999Z",
+            "modified": "2023-11-02T22:50:04.627Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fe0ec5d0-9e01-4e14-a0c1-d42acae53e7f",
+            "colId": "f9dbbf2c-c431-40ff-acc7-33164309845d",
+            "containerId": "a582dd5d-3a2e-48e7-ade2-cfc5ce3d9851",
+            "name": "Actualizar bootcamp",
+            "url": "http://127.0.0.1:4500/api/v1/devcamp/bootcamps/6543f922c193c79c717a65cc",
+            "method": "PUT",
+            "sortNum": 17500,
+            "created": "2023-11-02T21:02:53.099Z",
+            "modified": "2023-11-02T21:06:30.439Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"address\": \"Sena calle 63\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f66d99d0-f7fa-40cf-8517-e0d59c0e4b03",
+            "colId": "f9dbbf2c-c431-40ff-acc7-33164309845d",
+            "containerId": "a582dd5d-3a2e-48e7-ade2-cfc5ce3d9851",
+            "name": "Crear bootcamp",
+            "url": "http://127.0.0.1:4500/api/v1/devcamp/bootcamps",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-11-02T20:05:48.743Z",
+            "modified": "2023-11-02T20:05:48.743Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"JavaScript bootcamp\",\n  \"phone\":3225555588,\n  \"address\":\"sena calle 52\",\n  \"Topics\":[\"Fronend/Ux\",\"Backend\"],\n  \"createdAt\":\"2023-10-26\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d4d99d08-3403-4f34-a49c-176e06a5a484",
+            "colId": "f9dbbf2c-c431-40ff-acc7-33164309845d",
+            "containerId": "a582dd5d-3a2e-48e7-ade2-cfc5ce3d9851",
+            "name": "Crear bootcamp con error",
+            "url": "http://127.0.0.1:4500/api/v1/devcamp/bootcamps",
+            "method": "POST",
+            "sortNum": 25000,
+            "created": "2023-11-02T23:08:58.211Z",
+            "modified": "2023-11-02T23:17:00.028Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"phone\":3225555588,\n  \"address\":\"sena calle 52\",\n  \"Topics\":[\"Fronend/Ux\",\"Backend\"],\n  \"createdAt\":\"2023-10-26\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7e690cac-fa01-4272-84bc-44945bb6a8db",
+            "colId": "f9dbbf2c-c431-40ff-acc7-33164309845d",
+            "containerId": "a582dd5d-3a2e-48e7-ade2-cfc5ce3d9851",
+            "name": "eliminar bootcamp",
+            "url": "http://127.0.0.1:4500/api/v1/devcamp/bootcamps/6543f922c193c79c717a65cc",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2023-11-02T21:16:42.109Z",
+            "modified": "2023-11-02T21:57:42.915Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
